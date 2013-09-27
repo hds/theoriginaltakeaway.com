@@ -1,4 +1,4 @@
-theoriginaltakeaway.com
-=======================
-
 The Original Takeaway
+=====================
+
+http://theoriginaltakeaway.com
