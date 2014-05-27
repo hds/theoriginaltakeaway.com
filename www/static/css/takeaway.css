@@ -1,0 +1,287 @@
+/* **** FONTS **** */
+
+@font-face {
+	font-family: Averia;
+	src: url('/static/font-family/averia/Averia-Regular.ttf') format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Averia;
+	src: url('/static/font-family/averia/Averia-Italic.ttf') format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: Averia;
+	src: url('/static/font-family/averia/Averia-Bold.ttf') format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: Averia;
+	src: url('/static/font-family/averia/Averia-BoldItalic.ttf') format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+html, body  {
+	height: 100%;
+}
+
+body  {
+	background: transparent none;
+
+	text-rendering: optimizeLegibility;
+	font-family: Averia, Helvetica;
+}
+
+/* Container */
+
+body>.container  {
+	min-height: 100%;
+	-moz-box-shadow: 0 0 8px #000;
+	-webkit-box-shadow: 0 0 8px #000;
+	box-shadow: 0 0 8px #000;
+
+	font-size: 13pt;
+	line-height: 1.5;
+
+	padding-top: 30px;
+}
+
+.container  {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.masthead .container  {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media (min-width: 992px)  {
+	.container  {
+		width: 870px;
+	}
+}
+
+a  {
+	text-decoration: underline;
+}
+
+h1.logo  {
+	float: right;
+	margin: 0 24px 32px 24px;
+	width: 240px;
+	height: 300px;
+
+	padding: 0;
+	text-indent: -3000px;
+	white-space: nowrap;
+
+	background: transparent url(/static/img/original-logo.png) no-repeat left top;
+}
+
+@media (max-width: 480px)  {
+	h1.logo  {
+		float: none;
+		margin: 0 auto 24px auto;
+	}
+}
+
+h2  {
+	margin: 0 0 20px 0;
+}
+
+h3.section  {
+	margin: 40px 0 10px 0;
+}
+
+h4.section  {
+	margin: 20px 0 10px 0;
+}
+
+.separator  {
+	width: 70%;
+	border-bottom: 1px solid #cccccc;
+	opacity: 0.4;
+	margin: 40px auto;
+	clear: both;
+}
+
+/* **** FOOTER **** */
+
+.footer  {
+	margin-top: 80px;
+}
+
+.footer .separator  {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.footer p  {
+	font-size: 70%;
+	text-align: center;
+}
+
+/* **** NAVIGATION **** */
+
+.masthead  {
+	background: #000 none;
+}
+
+nav>a.nav-item  {
+	display: inline-block;
+	padding: 10px 14px;
+
+	color: #fff;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+@media (max-width: 480px)  {
+	nav>a.nav-item  {
+		font-size: 11pt;
+	}
+}
+
+@media (max-width: 320px)  {
+	nav>a.nav-item  {
+		font-size: 11pt;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+/* **** SKINS **** */
+
+/* ** Chinese **
+ * Background: f9db34 (bold yellow)
+ * Container: ffe760 (pale yellow)
+ * Text: 000 (black)
+ * Emphasis: d9152e (red)
+
+ * ** Burger **
+ * Background: e21112 (bright red)
+ * Container: ad1521 (dark red)
+ * Text: fff (white)
+ * Emphasis: f3ef0c (yellow)
+
+ * ** Coffee **
+ * Background: 522819 (medium brown)
+ * Container: 361d13 (dark brown)
+ * Text: fff (white)
+ * Emphasis: f5eea6 (cream)
+ */
+
+body.chinese  {
+	background-color: #f9db34;
+}
+
+.chinese>.container  {
+	background-color: #ffe760;
+	color: #000;
+}
+
+.chinese a,
+.chinese .page-title,
+.chinese .nav-item.active,
+.chinese .nav-item:hover  {
+	color: #d9152e;
+}
+
+.chinese .separator  {
+	border-color: #d9152e;
+}
+
+.chinese .logo  {
+	background-position: left top;
+}
+
+
+body.burger  {
+	background-color: #e21112;
+}
+
+.burger>.container  {
+	background-color: #ad1521;
+	color: #fff;
+}
+
+.burger a,
+.burger .page-title,
+.burger .nav-item.active,
+.burger .nav-item:hover  {
+	color: #f3ef0c;
+}
+
+.burger .separator  {
+	border-color: #f3ef0c;
+}
+
+.burger .logo  {
+	background-position: center top;
+}
+
+
+body.coffee  {
+	background-color: #522819;
+}
+
+.coffee>.container  {
+	background-color: #361d13;
+	color: #fff;
+}
+
+.coffee a,
+.coffee .page-title,
+.coffee .nav-item.active,
+.coffee .nav-item:hover  {
+	color: #f5eea6;
+}
+
+.coffee .separator  {
+	border-color: #f5eea6;
+}
+
+.coffee .logo  {
+	background-position: right top;
+}
+
+/* **** CV **** */
+
+.cv-details p  {
+	margin-bottom: 0;
+}
+
+.cv h4  {
+	margin-bottom: 4px;
+	font-weight: bold;
+}
+
+.cv h4 .year  {
+	font-weight: normal;
+	font-size: 90%;
+}
+
+.cv p  {
+	margin-bottom: 0;
+}
+
+.cv-details .item  {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* **** Contact page **** */
+
+.contact  {
+	margin-bottom: 16px;
+}
+
+.contact p  {
+	margin-bottom: 0;
+}
