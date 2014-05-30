@@ -67,6 +67,10 @@ body>.container  {
 }
 
 a  {
+	text-decoration: none;
+}
+
+a:hover  {
 	text-decoration: underline;
 }
 
@@ -291,9 +295,17 @@ body.coffee  {
 
 /* **** Thesis page **** */
 
+.thesis  {
+	margin: 40px 0;
+}
+
 .thesis .frame-wrapper  {
-	margin: 20px;
+	margin: 20px 0 0 0;
+	padding: 20px;
 /*	background: #ccc none;*/
+
+	border-width: 1px;
+	border-style: solid;
 }
 
 .thesis .frame-wrapper img  {
@@ -301,8 +313,6 @@ body.coffee  {
 	height: 100%;
 	max-width: 800px;
 	max-height: 600px;
-
-
 }
 
 .thesis .timeline  {
