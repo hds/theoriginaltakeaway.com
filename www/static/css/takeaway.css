@@ -192,6 +192,7 @@ body.chinese  {
 	color: #d9152e;
 }
 
+.chinese .skin-border,
 .chinese .separator  {
 	border-color: #d9152e;
 }
@@ -217,6 +218,7 @@ body.burger  {
 	color: #f3ef0c;
 }
 
+.burger .skin-border,
 .burger .separator  {
 	border-color: #f3ef0c;
 }
@@ -242,6 +244,7 @@ body.coffee  {
 	color: #f5eea6;
 }
 
+.coffee .skin-border,
 .coffee .separator  {
 	border-color: #f5eea6;
 }
@@ -298,25 +301,42 @@ body.coffee  {
 	height: 100%;
 	max-width: 800px;
 	max-height: 600px;
+
+
 }
 
 .thesis .timeline  {
-	border-bottom: 2px solid #333;
+	height: 10px;
+
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	/*border-bottom: 3px solid #333;*/
+	position: relative;
+}
+
+.thesis .timeline .commit  {
+	width: 1px;
+	height: 8px;
+
+	border-left-width: 1px;
+	border-left-style: solid;
+
+	position: absolute;
+	top: 5px;
+	left: 0px;
 }
 
 .thesis .timeline .marker  {
-/*	width: 8px;
-	height: 8px;*/
-/*	border-radius: 4px;
-	background: #000 none;
-	border: 1px solid #000;*/
 
-	position: relative;
-	top: 5px;
-	left: -4px;
+	width: 17px;
+	position: absolute;
+	top: -8px;
+	left: 0px;
 	transition: 0.2s linear;
 	-webkit-transition: 0.2s linear;
 	-moz-transition: 0.2s linear;
 	-ms-transition: 0.2s linear;
 }
+
+
 
