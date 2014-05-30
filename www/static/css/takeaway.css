@@ -305,15 +305,18 @@ body.coffee  {
 }
 
 .thesis .timeline .marker  {
-	width: 8px;
-	height: 8px;
-	border-radius: 4px;
+/*	width: 8px;
+	height: 8px;*/
+/*	border-radius: 4px;
 	background: #000 none;
-/*	border: 1px solid #000;
-*/
+	border: 1px solid #000;*/
+
 	position: relative;
 	top: 5px;
 	left: -4px;
-	-webkit-animation-duration: .2s;
+	transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
 }
 
