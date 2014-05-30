@@ -301,7 +301,7 @@ body.coffee  {
 
 .thesis .frame-wrapper  {
 	margin: 20px 0 0 0;
-	padding: 20px;
+	padding: 0;
 /*	background: #ccc none;*/
 
 	border-width: 1px;
@@ -313,6 +313,9 @@ body.coffee  {
 	height: 100%;
 	max-width: 800px;
 	max-height: 600px;
+
+	display: block;
+	margin: 0 auto;
 }
 
 .thesis .timeline  {
