@@ -3,11 +3,11 @@ $(function() {
 	var commits = [];
 	var current = 0;
 	var interval = null;
-	var url = '/data/tesi-tn-5.json';
+	// var url = '/data/tesi-tn-5.json';
 	var last_checked = null;
 
 	function load_commits()  {
-		// var url = '/data/tesi-tn.json';
+		var url = '/data/tesi-tn.json';
 
 		last_checked = new Date();
 		$.ajax(url, {
@@ -19,8 +19,7 @@ $(function() {
 				console.log("There was an error retrieving commit info.");
 			}
 		});
-
-		url = '/data/tesi-tn.json';
+		// url = '/data/tesi-tn.json';
 	}
 
 	function check_for_update()  {

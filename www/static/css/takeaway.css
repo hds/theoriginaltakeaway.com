@@ -329,14 +329,22 @@ body.coffee  {
 
 .thesis .timeline .commit  {
 	width: 1px;
-	height: 8px;
+	height: 12px;
 
 	border-left-width: 1px;
 	border-left-style: solid;
 
 	position: absolute;
-	top: 5px;
+	top: 4px;
 	left: 0px;
+}
+
+.thesis .timeline .commit:hover  {
+	border-left-width: 5px;
+	transform: translate(-2px);
+	-webkit-transform: translate(-2px);
+	-moz-transform: translate(-2px);
+	-ms-transform: translate(-2px);
 }
 
 .thesis .timeline .marker  {
@@ -350,6 +358,4 @@ body.coffee  {
 	-moz-transition: 0.2s linear;
 	-ms-transition: 0.2s linear;
 }
-
-
 
