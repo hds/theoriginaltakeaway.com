@@ -1,18 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en_GB">
 	<head>
-		<title>Mathematics - The Original Takeaway</title>
-
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="Mathematics, number theory, take away"></meta>
+
+		<title>Mathematics - The Original Takeaway</title>
 
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		
-		<link rel="stylesheet" href="/media/css/original.css" type="text/css" media="all" charset="utf-8" />
-		
-		<script type="text/javascript" src="/media/js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="/media/js/jquery-ui-1.8.20.custom.min.js"></script>
-		<script type="text/javascript" src="/media/js/original.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="/static/css/takeaway.css">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
 		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 			MathJax.Hub.Config({
 			  tex2jax: {
@@ -21,104 +30,74 @@
 			  }
 			});
 		</script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-5120761-7']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-5120761-7', 'originaltakeaway.com');
+		  ga('send', 'pageview');
 		</script>
 	</head>
-
-	<body class="chinese">
-		<div style="display:none;">$\def\md{\hspace{-6pt}\mod}$</div>
-	
-		<div class="outer">
-			<div class="inner">
-				<div class="menu">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="/cv/">CV</a></li>
-						<li><a class="selected" href="/research/">Research</a></li>
-						<li><a href="/galois/">Galois</a></li>
-						<li><a href="/contact/">Contact</a></li>
-					</ul>
-				</div>
-				
-				<div class="style-menu">
-					<ul>
-						<li class="chinese"><a href="#chinese">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-						<li class="burger"><a href="#burger">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-						<li class="coffee"><a href="#coffee">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-					</ul>
-				</div>
-				
-				<div class="left-column column">
-					<div class="column-inner">
-						<h1 class ="logo">
-							The Original Takeaway
-						</h1>
-						<div class="author">
-							2014, Hayden Stainsby
-						</div>
-					</div>
-				</div>
-				
-				<div class="right-column column">
-					<div class="column-inner">
-						<p>
-							I am currently working towards my PhD in Mathematics at the <a href="http://www.uab.cat/">Universitat Aut&ograve;noma de Barcelona</a>. My research is based on the <a href="http://montesproject.blogspot.com/">Montes Algorithm</a>, the output of which I'm working with to more efficiently compute integral bases of number fields.
-						</p>
-						
-						<p>
-							For more information on the current state of what's being done with the Montes Algorithm, this <a href="#om-factorizations">recent article</a> (published in the LMS Journal of Computation and Mathematics)  is a good place to start.
-						</p>
-						
-						<p>
-							As a computer scientist turned mathematician, my background in mathematical fundamentals isn't as strong as it could be. However (aside from thoroughly enjoying mathematics), I've found that applying my CS experience to other fields I'm working in can be very advantageous.
-						</p>
-						
-						<p>
-							My more personal research interests lie in cryptography - and computer security in general - and in the learning of mathematics.
-						</p>
-						
-						
-						<h3>Published Articles</h3>
-						
-						<h4><a href="http://journals.cambridge.org/action/displayAbstract?aid=8947435" target="_blank">Complexity of OM Factorizations of Polynomials Over Local Fields</a></h4>
-						<a name="om-factorizations"></a>
-						
-						<p class="authors">
-							<a href="http://arxiv.org/find/math/1/au:+Bauch_J/0/1/0/all/0/1">Jens-Dietrich Bauch</a>, 
-							<a href="http://arxiv.org/find/math/1/au:+Nart_E/0/1/0/all/0/1">Enric Nart</a>, 
-							<a href="http://arxiv.org/find/math/1/au:+Stainsby_H/0/1/0/all/0/1">Hayden D. Stainsby</a>
-						</p>
-						
-						<p class="abstract">
-							Abstract: <span class="abstract">Let $k$ be a locally compact complete field with respect to a discrete valuation $v$. Let $\mathcal{O}$ be the valuation ring, $\mathfrak{m}$ the maximal ideal and $F(x)\in\mathcal{O}[x]$ a monic separable polynomial of degree $n$. Let $\delta=v(\operatorname{Disc}(F))$. The Montes algorithm computes an OM factorization of $F$. The single-factor lifting algorithm derives from this data a factorization of $F(\md \mathfrak{m}^{\nu})$, for a prescribed precision $\nu$. In this paper we find a new estimate for the complexity of the Montes algorithm, leading to an estimation of $O(n^{2+\epsilon}+n^{1+\epsilon}\delta^{2+\epsilon}+n^2\nu^{1+\epsilon})$ word operations for the complexity of the computation of a factorization of $F(\md \mathfrak{m}^{\nu})$, assuming that the residue field of $k$ is small.</span>
-						</p>
-					</div>
-				</div>
+	<body class="coffee">
+		<div class="masthead" role="navigation">
+			<div class="container">
+				<nav class="takeaway-nav">
+					<a class="nav-item" href="/">Home</a>
+					<a class="nav-item" href="/cv/">CV</a>
+					<a class="nav-item active" href="/research/">Research</a>
+					<a class="nav-item" href="/teaching/">Teaching</a>
+					<a class="nav-item" href="/contact/">Contact</a>
+				</nav>
 			</div>
 		</div>
-	
 
+		<div class="container" role="main">
+
+			<h2 class="page-title">Research</h2>
+
+			<p>I am currently working towards my Ph.D. in Mathematics at the <a href="http://www.uab.cat/">Universitat Aut&ograve;noma de Barcelona</a>. My research is based on the <a href="http://montesproject.blogspot.com/">Montes Algorithm</a>, the output of which I'm working with to more efficiently compute integral closures.</p>
+
+			<p>I'm in the process of writing my thesis dissertation, you can <a href="/research/thesis/">watch my progress</a> in (somewhat) realtime.
+			
+			<p>For more information on the current state of what's being done with the Montes Algorithm, have a look at these preprints:</p>
+			<ul>
+				<li><a href="http://arxiv.org/abs/1305.0775">Residual ideals of MacLane valuations</a></li>
+				<li><a href="http://arxiv.org/abs/1309.4340">Genetics of polynomials over local fields</a></li>
+			</ul>
+									
+			<p>My other research interests lie in cryptography - and computer security in general - and in the learning of mathematics.</p>
+			
+
+			<h3 class="section">Published Articles</h3>
+			
+			<h4><a href="http://journals.cambridge.org/action/displayAbstract?aid=8947435" target="_blank">Complexity of OM Factorizations of Polynomials Over Local Fields</a></h4>
+			<a name="om-factorizations"></a>
+			
+			<p class="authors">
+				<a href="http://arxiv.org/find/math/1/au:+Bauch_J/0/1/0/all/0/1">Jens-Dietrich Bauch</a>, 
+				<a href="http://arxiv.org/find/math/1/au:+Nart_E/0/1/0/all/0/1">Enric Nart</a>, 
+				<a href="http://arxiv.org/find/math/1/au:+Stainsby_H/0/1/0/all/0/1">Hayden D. Stainsby</a>
+			</p>
+			
+			<p class="abstract">
+				<em>Abstract:</em> <span class="abstract">Let $k$ be a locally compact complete field with respect to a discrete valuation $v$. Let $\mathcal{O}$ be the valuation ring, $\mathfrak{m}$ the maximal ideal and $F(x)\in\mathcal{O}[x]$ a monic separable polynomial of degree $n$. Let $\delta=v(\operatorname{Disc}(F))$. The Montes algorithm computes an OM factorization of $F$. The single-factor lifting algorithm derives from this data a factorization of $F \pmod{\mathfrak{m}^{\nu}}$, for a prescribed precision $\nu$. In this paper we find a new estimate for the complexity of the Montes algorithm, leading to an estimation of $O(n^{2+\epsilon}+n^{1+\epsilon}\delta^{2+\epsilon}+n^2\nu^{1+\epsilon})$ word operations for the complexity of the computation of a factorization of $F \pmod{\mathfrak{m}^{\nu}}$, assuming that the residue field of $k$ is small.</span>
+			</p>
+
+			<div class="footer" role="footer">
+				<div class="separator"></div>
+				<p><span class="year">2014</span>, Hayden Stainsby.</p>
+			</div>
+		</div>
+
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script>
+			var skins = ['chinese', 'burger', 'coffee'];
+			var skin_i = Math.floor(Math.random()*skins.length);
+			$('body').removeClass().addClass(skins[skin_i]);
+		</script>
 	</body>
-
 </html>

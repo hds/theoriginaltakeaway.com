@@ -1,261 +1,221 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en_GB">
 	<head>
-		<title>Mathematics - The Original Takeaway</title>
-
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="keywords" content="Mathematics, number theory, take away"></meta>
+
+		<title>Mathematics - The Original Takeaway</title>
 
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		
-		<link rel="stylesheet" href="/media/css/original.css" type="text/css" media="all" charset="utf-8" />
-		
-		<script type="text/javascript" src="/media/js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="/media/js/jquery-ui-1.8.20.custom.min.js"></script>
-		<script type="text/javascript" src="/media/js/original.js"></script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-5120761-7']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="/static/css/takeaway.css">
+
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+			MathJax.Hub.Config({
+			  tex2jax: {
+			    inlineMath: [['$','$'], ['\\(','\\)']],
+			    processEscapes: true
+			  }
+			});
+		</script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-5120761-7', 'originaltakeaway.com');
+		  ga('send', 'pageview');
 		</script>
 	</head>
-
-	<body class="chinese">
-	
-		<div class="outer">
-			<div class="inner">
-				<div class="menu">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a class="selected" href="/cv/">CV</a></li>
-						<li><a href="/research/">Research</a></li>
-						<li><a href="/galois/">Galois</a></li>
-						<li><a href="/contact/">Contact</a></li>
-					</ul>
-				</div>
-				
-				<div class="style-menu">
-					<ul>
-						<li class="chinese"><a href="#chinese">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-						<li class="burger"><a href="#burger">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-						<li class="coffee"><a href="#coffee">
-							<div class="tab">
-								<div class="logo"></div>
-							</div>
-						</a></li>
-					</ul>
-				</div>
-				
-				<div class="left-column column">
-					<div class="column-inner">
-						<h1 class ="logo">
-							The Original Takeaway
-						</h1>
-						<div class="author">
-							2014, Hayden Stainsby
-						</div>
-					</div>
-				</div>
-				
-				<div class="right-column column">
-					<div class="column-inner">
-						<div class="cv">
-							<h3>Hayden Duncan Stainsby</h3>
-							
-							<p>
-								This is a concise version of my current curriculum vit&aelig;. A PDF version suitable for printing will be available shortly.
-							</p>
-							
-							<h4>Personal Details</h4>
-							
-							<div class="cv-details">
-								<label>Given names</label>
-								<p>Hayden Duncan</p>
-								
-								<label for="">Surname</label>
-								<p>Stainsby</p>
-								
-								<label for="">Country of Origin</label>
-								<p>Australia</p>
-								
-							</div>
-							
-							
-							<h4>Academic Experience</h4>
-							
-							<div class="experience">
-								<div class="item">
-									<div class="date">
-										2010 - current
-									</div>
-									<div class="description">
-										<strong>Doctorate in Mathematics</strong><br />
-										Universitat Aut&ograve;noma de Barcelona
-									</div>
-									<div class="location">
-										Barcelona, Spain
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-										2009 - 2010
-									</div>
-									<div class="description">
-										<strong>Masters of Multimedia Design</strong><br />
-										Escoles Universit&agrave;ries Gimbernat i Tom&agrave;s Cerd&agrave; (Adscrita a la UAB)
-									</div>
-									<div class="location">
-										Barcelona, Spain
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-										2008 - 2010
-									</div>
-									<div class="description">
-										<strong>Masters of Computational Science and Engineering</strong><br />
-										Universitat Aut&ograve;noma de Barcelona
-									</div>
-									<div class="location">
-										Barcelona, Spain
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-										2002 - 2004
-									</div>
-									<div class="description">
-										<strong>Bachelor of Digital Systems</strong><br />
-										Monash University
-									</div>
-									<div class="location">
-										Melbourne, Australia
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-										1989 - 2001
-									</div>
-									<div class="description">
-										<strong>International Baccalaureate</strong><br />
-										(Primary and secondary school)<br/>
-										St. Leonard's College
-									</div>
-									<div class="location">
-										Melbourne, Australia
-									</div>
-								</div>
-							</div>
-								
-								
-							<h4>Professional Experience</h4>
-							
-							<div class="experience">
-								<div class="item">
-									<div class="date">
-										2005 - current
-									</div>
-									<div class="description">
-										<strong>Titan Entertainment Group</strong><br />
-									</div>
-									<div class="location">
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-									</div>
-									<div class="description">
-										"Systems Developer and Administrator" (2007 - current)<br />
-										Development of mobile applications for Apple's iOS devices. Development of internal tools to administer servers and automate repetitive tasks. Management of web, email, and file servers based on the Mac and Linux operating systems.
-									</div>
-									<div class="location">
-										London, United Kingdom (from Barcelona)
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-									</div>
-									<div class="description">
-										"Assistant IT Manager" (2006 - 2007)<br />
-										Day to day management of a team of IT support staff. Installation of personal computers and servers. Development of tools to administer servers and automate repetitive tasks.
-									</div>
-									<div class="location">
-										London, United Kingdom
-									</div>
-								</div>
-								
-								<div class="item">
-									<div class="date">
-									</div>
-									<div class="description">
-										"IT Support" (2005 - 2006)<br />
-										Help users with technical problems in design and productivity applications. Installation of personal computers and servers.
-									</div>
-									<div class="location">
-										London, United Kingdom
-									</div>
-								</div>
-								
-							</div>
-							
-							<div class="cv-details">
-								<p>
-									Prior to this I held a number of part time retail jobs while I studied in Australia. While they can provide some funny anecdotes, I don't think they add anything to my resume.
-								</p>
-							</div>
-							
-							
-							<h4>Languages</h4>
-							
-							<div class="cv-details">
-								<label for="">English</label>
-								<p>Native speaker.</p>
-								
-								<label for="">Spanish (Castilian)</label>
-								<p>Fluent speaking, advanced written.</p>
-								
-								<label for="">Catalan</label>
-								<p>Intermediate speaking, basic written.</p>
-								
-								<label for="">German</label>
-								<p>Basic speaking and written.</p>
-							</div>
-							
-							<h4>References</h4>
-							
-							<div class="cv-details">
-								<p>
-									References are available <a href="/contact/">on request</a>.
-								</p>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+	<body class="coffee">
+		<div class="masthead" role="navigation">
+			<div class="container">
+				<nav class="takeaway-nav">
+					<a class="nav-item" href="/">Home</a>
+					<a class="nav-item active" href="/cv/">CV</a>
+					<a class="nav-item" href="/research/">Research</a>
+					<a class="nav-item" href="/teaching/">Teaching</a>
+					<a class="nav-item" href="/contact/">Contact</a>
+				</nav>
 			</div>
 		</div>
-	
 
+		<div class="container" role="main">
+
+			<h2 class="page-title">Curriculum Vit&aelig;</h2>
+
+			<p>Here you can find an online and hopefully up-to-date version of my curriculum vit&aelig;. A PDF version suitable for printing will be available shortly.</p>
+
+			<div class="cv">
+				<h3 class="page-title section">Personal Details</h3>
+				
+				<div class="cv-details">
+					<p><label>Given names:</label> Hayden Duncan</p>
+					<p><label>Surname:</label> Stainsby</p>
+					<p><label>Country of Origin:</label> Australia</p>
+				</div>
+				
+				
+				<h3 class="page-title section">Education and training</h3>
+				
+				<div class="cv-details">
+					<div class="item">
+						<h4>Ph.D. in Mathematics <span class="year">(2010 - present)</span></h4>
+						<p>Universitat Aut&ograve;noma de Barcelona - <span class="location">Barcelona, Spain</span></p>
+					</div>
+					
+					<div class="item">
+						<h4>Masters of Multimedia Design <span class="year">(2009-2010)</span></h4>
+						<p>Escoles Universit&agrave;ries Gimbernat i Tom&agrave;s Cerd&agrave; (Adscrita a la UAB) - <span class="location">Barcelona, Spain</span></p>
+					</div>
+					
+					<div class="item">
+						<h4>Masters of Computational Science and Engineering <span class="year">(2008 - 2010)</span></h4>
+						<p>Universitat Aut&ograve;noma de Barcelona <span class="location">Barcelona, Spain</span></p>
+					</div>
+					
+					<div class="item">
+						<h4>Bachelor of Digital Systems <span class="year">(2002 - 2004)</span></h4>
+						<p>Monash University <span class="location">Melbourne, Australia</span></p>
+					</div>					
+				</div>
+				
+				<h3 class="page-title section">Publications</h3>
+
+				<h4>Journal</h4>
+
+				<div class="cv-details">
+					<p class="item"><em>Bauch, Jens-Dietrich; Nart, Enric; Stainsby, Hayden D</em>. <strong>Complexity of OM factorizations of polynomials over local fields</strong>. LMS Journal of Computation and Mathematics, 2013, pp. 139-171.</p>
+				</div>
+
+				<h4>Conference</h4>
+
+				<div class="cv-details">
+					<p class="item"><em>Stainsby, Hayden; Taboada, Manel; Luque, Emilio</em>. <strong>Agent-Based Simulation to Support Decision Making in Healthcare Management Planning</strong>. HEALTHINF, 2010.</p>
+					<p class="item"><em>Stainsby, Hayden; Taboada, Manel; Luque, Emilio</em>. <strong>Towards an Agent-Based Simulation of Hospital Emergency Departments</strong>. IEEE International Conference on Services Computing, (SCC '09), 2009, pp. 536-539.</p>
+					<p><em>Stainsby, Hayden; Muresano, Ronal; Fialho, Leonardo; Gonz&aacute;lez, Juan Carlos; Rexachs, Dolores; Luque, Emilio</em>. <strong>Teaching Model for Computational Science and Engineering Programme</strong>. International Conference on Computer Science (ICCS '09), 2009, pp. 34-43.</p>
+				</div>
+
+				<h3 class="page-title section">Conference &amp; seminar attendance</h3>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>Barcelona Number Theory Seminar (STNB 2014)</strong> - <span class="location">Barcelona, Spain</span></p>
+					<p>Participation: organiser, speaker.</p>
+				</div>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>Barcelona Number Theory Seminar (STNB 2013)</strong> - <span class="location">Barcelona, Spain</span></p>
+					<p>Participation: organiser.</p>
+				</div>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>Algorithmic Number Theory Symposium (ANTS X 2012)</strong> - <span class="location">San Diego, U.S.A.</span></p>
+					<p>Participation: attendee.</p>
+				</div>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>Barcelona Number Theory Seminar (STNB 2012)</strong> - <span class="location">Barcelona, Spain</span></p>
+					<p>Participation: attendee.</p>
+				</div>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>Barcelona Number Theory Seminar (STNB 2011)</strong> - <span class="location">Barcelona, Spain</span></p>
+					<p>Participation: attendee.</p>
+				</div>
+
+				<div class="cv-details">
+					<div class="item">
+					<p><strong>IEEE International Conference on Services Computing (SCC 2009)</strong> - <span class="location">Bangalore, India</span></p>
+					<p>Participation: speaker.</p>
+				</div>
+
+				<h3 class="page-title section">Professional Experience</h3>
+				
+				<div class="cv-details">
+					<div class="item">
+						<h4>Universitat Aut&ograve;noma de Barcelona - <span class="location">Barcelona, Spain</span></h4>
+						<p>"Predoctoral researcher" <span class="year">(2013 - present)</span></p>
+						<p>New research in the area of computational number theory. This position also includes responsibility for teaching undergraduate level classes.</p>
+					</div>
+
+					<div class="item">
+						<h4>Universitat de Barcelona - <span class="location">Barcelona, Spain</span></h4>
+						<p>"IT technician" <span class="year">(2011 - 2012)</span></p>
+						<p>Work as a programmer for the <em>Number Theory</em> research group at the University of Barcelona, which included the development of a web-site for the annual number theory seminar STNB.</p>
+					</div>
+
+					<div class="item">
+						<h4>Titan Entertainment Group - <span class="location">London, United Kingdom</span></h4>
+
+						<p>"Systems Developer and Administrator (remote)" <span class="year">(2007 - current)</span></p>
+						<p>Development of mobile applications for Apple's iOS devices. Development of internal tools to administer servers and automate repetitive tasks. Management of web, email, and file servers based on the Mac and Linux operating systems.
+					</div>
+								
+					<div class="item">
+						<p>"Assistant IT Manager" <span class="year">(2006 - 2007)</span></p>
+						<p>Day to day management of a team of IT support staff. Installation of personal computers and servers. Development of tools to administer servers and automate repetitive tasks.</p>
+					</div>
+					
+					<div class="item">
+						<p>"IT Support" <span class="year">(2005 - 2006)</span></p>
+						<p>Help users with technical problems in design and productivity applications. Installation of personal computers and servers.</p>
+					</div>
+					
+				</div>
+				
+				
+				<h3 class="page-title section">Languages</h3>
+				
+				<div class="cv-details">
+					<p><label>English</label>: Native speaker.</p>
+					<p><label>Spanish (Castilian)</label>: Fluent speaking, advanced written.</p>
+					<p><label>Catalan</label>: Intermediate speaking, basic written.</p>
+					<p><label>German</label>: Basic speaking and written.</p>
+				</div>
+				
+				<h3 class="page-title section">References</h3>
+				
+				<div class="cv-details">
+					<p>
+						References are available <a href="/contact/">on request</a>.
+					</p>
+				</div>
+				
+			</div>
+
+
+			<div class="footer" role="footer">
+				<div class="separator"></div>
+				<p><span class="year">2014</span>, Hayden Stainsby.</p>
+			</div>
+		</div>
+
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script>
+			var skins = ['chinese', 'burger', 'coffee'];
+			var skin_i = Math.floor(Math.random()*skins.length);
+			$('body').removeClass().addClass(skins[skin_i]);
+		</script>
 	</body>
-
 </html>
+
