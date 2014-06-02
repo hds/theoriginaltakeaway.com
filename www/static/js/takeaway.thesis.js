@@ -29,7 +29,6 @@ $(function() {
 		// Check for updates once every 10 minutes.
 		if (now - last_checked > (1000 * 600))  {
 			load_commits();
-			console.log('update!!');
 		}
 	}
 
@@ -49,14 +48,11 @@ $(function() {
 
 		marker = $('<span class="marker glyphicon glyphicon-chevron-down"></span>');
 		marker.css('left', marker_position(current, marker));
-		console.log('start', current, marker_position(current, marker));
 		timeline.append(marker);
 
 		$(window).resize(function (event)  {
 			var commit_elements = $('.thesis .timeline .commit');
-			console.log(commit_elements);
 			for (i = 0; i < commits.length; i++)  {
-				console.log(commit_elements.get(i));
 				$(commit_elements.get(i)).css('left', position(i));
 			}
 		});
@@ -75,7 +71,6 @@ $(function() {
 		if (! marker)
 			marker = $('.thesis .timeline .marker');
 		var pos = position(i) - (marker.width()/2)-1;
-		// console.log(i, pos, marker.width()/2);
 		return pos;
 	}
 
@@ -84,7 +79,6 @@ $(function() {
 		$('.thesis img').attr('src', '/data/'+c['filename']);
 		$('.thesis .commit-date').html(c['date'] + ' (' + c['commit'] + ')');
 
-		// console.log(left);
 		var marker = $('.thesis .timeline .marker');
 		marker.css('left', marker_position(i, marker));
 	}
