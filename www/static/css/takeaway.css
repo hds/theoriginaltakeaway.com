@@ -154,8 +154,8 @@ nav>a.nav-item  {
 @media (max-width: 320px)  {
 	nav>a.nav-item  {
 		font-size: 11pt;
-		padding-left: 5px;
-		padding-right: 5px;
+		padding-left: 4px;
+		padding-right: 4px;
 	}
 }
 
@@ -347,6 +347,8 @@ body.coffee  {
 	-ms-transform: translate(-2px);
 }
 
+
+
 .thesis .timeline .marker  {
 
 	width: 17px;
@@ -357,5 +359,10 @@ body.coffee  {
 	-webkit-transition: 0.2s linear;
 	-moz-transition: 0.2s linear;
 	-ms-transition: 0.2s linear;
+}
+
+.thesis .commit-date  {
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
