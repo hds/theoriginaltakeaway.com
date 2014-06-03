@@ -11,6 +11,7 @@ $(function() {
 
 		last_checked = new Date();
 		$.ajax(url, {
+			cache: false,
 			success: function(data, status, req)  {
 				commits = data;
 				init_timeline();
