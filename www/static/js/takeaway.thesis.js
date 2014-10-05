@@ -94,7 +94,7 @@ $(function() {
 			set_frame(current);
 		};
 
-		interval = setInterval(update_frame, 1000);
+		interval = setInterval(update_frame, 400);
 	}
 
 	load_commits();
