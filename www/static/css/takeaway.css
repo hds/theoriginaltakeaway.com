@@ -191,6 +191,7 @@ body.chinese  {
 
 .chinese a,
 .chinese .page-title,
+.chinese .section .emph,
 .chinese .nav-item.active,
 .chinese .nav-item:hover  {
 	color: #d9152e;
@@ -217,6 +218,7 @@ body.burger  {
 
 .burger a,
 .burger .page-title,
+.burger .section .emph,
 .burger .nav-item.active,
 .burger .nav-item:hover  {
 	color: #f3ef0c;
@@ -243,6 +245,7 @@ body.coffee  {
 
 .coffee a,
 .coffee .page-title,
+.coffee .section .emph,
 .coffee .nav-item.active,
 .coffee .nav-item:hover  {
 	color: #f5eea6;
@@ -365,4 +368,3 @@ body.coffee  {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-
