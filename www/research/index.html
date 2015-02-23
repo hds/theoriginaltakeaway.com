@@ -83,7 +83,7 @@
 
 			<div class="footer" role="footer">
 				<div class="separator"></div>
-				<p><span class="year">2014</span>, Hayden Stainsby.</p>
+				<p><span class="year">2015</span>, Hayden Stainsby.</p>
 			</div>
 		</div>
 
@@ -95,6 +95,7 @@
 			var skins = ['chinese', 'burger', 'coffee'];
 			var skin_i = Math.floor(Math.random()*skins.length);
 			$('body').removeClass().addClass(skins[skin_i]);
+			$('.year').text((new Date()).getFullYear());
 		</script>
 	</body>
 </html>
