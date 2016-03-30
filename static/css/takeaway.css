@@ -67,24 +67,22 @@ body>.container  {
 }
 
 a  {
-	text-decoration: none;
-}
-
-a:hover  {
 	text-decoration: underline;
 }
 
 h1.logo  {
 	float: right;
-	margin: 0 24px 32px 24px;
-	width: 240px;
-	height: 300px;
+	width: 120px;
+	height: 150px;
 
 	padding: 0;
 	text-indent: -3000px;
 	white-space: nowrap;
 
 	background: transparent url(/static/img/original-logo.png) no-repeat left top;
+	/*background-size: 720px 300px;*/
+	background-size: 360px 150px;
+	margin: 0 24px 32px 24px;
 }
 
 @media (max-width: 480px)  {
@@ -92,6 +90,13 @@ h1.logo  {
 		float: none;
 		margin: 0 auto 24px auto;
 	}
+}
+
+h2 > a, h2 > a:hover,
+h3 > a, h3 > a:hover,
+h4 > a, h4 > a:hover,
+h5 > a, h5 > a:hover {
+	text-decoration: none;
 }
 
 h2  {
@@ -159,6 +164,21 @@ nav>a.nav-item  {
 	}
 }
 
+/* **** POSTS **** */
+
+.post {
+	/*clear: both;*/
+}
+
+/* **** CODE **** */
+
+.codehilite pre {
+	border: 0;
+	margin: 20px 10px 20px 10px;
+	border-radius: 0;
+	box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* **** SKINS **** */
 
 /* ** Chinese **
@@ -190,6 +210,7 @@ body.chinese  {
 }
 
 .chinese a,
+.chinese h2, .chinese h3, .chinese h4, .chinese h5,
 .chinese .page-title,
 .chinese .section .emph,
 .chinese .nav-item.active,
@@ -217,6 +238,7 @@ body.burger  {
 }
 
 .burger a,
+.burger h2, .burger h3, .burger h4, .burger h5,
 .burger .page-title,
 .burger .section .emph,
 .burger .nav-item.active,
@@ -244,6 +266,7 @@ body.coffee  {
 }
 
 .coffee a,
+.coffee h2, .coffee h3, .coffee h4, .coffee h5,
 .coffee .page-title,
 .coffee .section .emph,
 .coffee .nav-item.active,
@@ -258,6 +281,23 @@ body.coffee  {
 
 .coffee .logo  {
 	background-position: right top;
+}
+
+/* **** Home page **** */
+
+.cross-line {
+	margin-bottom: 60px;
+}
+
+/* **** Sections **** */
+
+.section .item-title {
+	font-style: italic;
+	margin-right: 6px;
+}
+
+.section .item-title:after {
+	content: ":";
 }
 
 /* **** CV page **** */

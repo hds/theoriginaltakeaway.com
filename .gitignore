@@ -1,2 +1,2 @@
-# Ignore the data folder
-www/data/
+.build/
+static/data/

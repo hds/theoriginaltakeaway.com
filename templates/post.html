@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>{{ title }}</h2>
+	<h5>{{ date|date:"l, j F Y" }}</h5>
+	{% load markup %}
+	{% filter markdown:"codehilite,gfm" %}
+	{% block body %}{% endblock body %}
+	{% endfilter markdown %}
+
+{% endblock content %}

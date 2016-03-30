@@ -1,0 +1,14 @@
+page: Home
+
+{% extends "base.html" %}
+
+{% block content %}
+	<h1 class="logo">The Original Takeaway</h1>
+
+	<h2 class="page-title">Hayden Stainsby</h2>
+
+	<p class="cross-line"><em>What you get when you cross a number theorist with a programmer.</em></p>
+
+	{% include "_post_list.html" with posts=posts %}
+
+{% endblock content %}

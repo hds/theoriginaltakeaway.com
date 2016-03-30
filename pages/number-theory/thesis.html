@@ -1,0 +1,29 @@
+page: Thesis
+
+{% extends "base.html" %}
+
+{% block scripts %}<script src="/static/js/takeaway.thesis.js"></script>{% endblock scripts %}
+
+{% block content %}
+			<h2 class="page-title">Thesis</h2>
+
+			<p>In December 2014 I defended my Ph.D. thesis, titled <span class="page-title">Triangular bases of integral closures</span>. The disseration itself can be download as a <a href="/media/hds-Tesi-Teoria_de_Nombres-1.0.3.pdf">PDF</a>.</p>
+
+			<p>The code which was written as part of my thesis is available on GitHub as part of the <a href="https://github.com/MontesProject/plus-ideals">+Ideals package</a> for arithmatic in large fields.
+
+			<p>Here you can see an animation of the process of writing the dissertation. Unfortunately I have some errors in the output from the beginning of October, but I'm hoping to fix those shortly. There are some more details about how this is constructed below.</p>
+
+			<div class="thesis">
+				<p class="commit-date">..</p>
+				<div class="skin-border timeline"></div>
+				<div class="frame-wrapper skin-border">
+					<img src="" alt="" border="0">
+				</div>
+			</div>
+
+			<h3 class="page-title">Some more details</h3>
+
+			<p>Like any good (truly paranoid) computer scientist, I regularly committed the source files of my dissertation to a git repository. I've written some scripts which compile the latex source to a PDF and then produces a "flatplan" of the document for each commit.</p>
+
+			<p>On this page you could watch in (somewhat) realtime how I was going with my writing. The page updated automatically as new commits were converted to flatplans. Of course, the process is over now, but I'm leaving this up here for nostalgia (and perhaps to remind myself about everything that's involved in writing a Ph.D. dissertatation).</p>
+{% endblock content %}
