@@ -1,0 +1,35 @@
+title: Single-Object Prelink - Libraries within libraries
+author: hds
+date: 05-04-2016
+
+{% extends "post.html" %}
+
+{% block body %}
+
+{% load markup %}
+{% filter markdown:"codehilite,gfm" %}
+I had a question the other day, and it seemed to also be a not-uncommon request online:
+
+> How can I embed one static (C/C++) library inside anther?
+
+Internet wisdom says that this can't be done, or at least the [first](http://stackoverflow.com/questions/2157629/linking-static-libraries-to-other-static-libraries) [few](http://stackoverflow.com/questions/11750390/linking-static-libraries-that-share-another-static-library) [results](http://stackoverflow.com/questions/18135787/does-a-static-library-add-inside-another-static-library-ios-xcode) that I got back from Google seem to indicate that it can't.
+
+Oddly enough, two of those results relate to Xcode and iOS. This makes some degree of sense, prior to iOS 8 you couldn't bundle dynamic libraries with your app, everything had to be liked statically. If you want to make a precompiled static library available, the user of the library (some app developer) needs to also have all the static libraries that you linked against available at app compile time.
+
+So, what's the goal here? Let's say you've got some static library `libadelaide`. You're writing your own library, `libbrisbane` which uses `libadelaide` internally, but doesn't expose any of it in its public headers. Really, the user of `libbrisbane` doesn't even need to know that `libadelaide` is being used (except of course that this is all open source and you'll include your use of `libadelaide` in the license file).
+
+### First try: `ar`
+
+The first option is to use the archive tool `ar` to smush all your static libraries together once they're compiled. Let's say you've already got your statically compiled `libadelaide.a` and `libbrisbane.a`.
+
+Then you can make a new library, `libbrisbane-final.a` using both of them with the follow command.
+
+```bash
+ar -rs libbrisbane-final.a libadelaide.a libbrisbane.a
+```
+
+
+
+
+{% endfilter markdown %}
+{% endblock body %}
