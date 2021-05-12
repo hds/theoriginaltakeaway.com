@@ -1,10 +1,11 @@
-{% for post in posts %}
+{% for page in section.pages %}
     <div class="post">
-        <h3><a href="{% url post.final_path %}">{{ post.title }}</a></h3>
-				<h5>{{ post.date|date:"l, j F Y" }}</h5>
+        <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+        <h5>{{ page.date | date(format="%A, %e %B %Y") }}</h5>
 
-        <div>{{ post.body }}</div>
+        <div>{{ page.content | safe }}</div>
 
-        {% if not forloop.last %}<div class="separator"></div>{% endif %}
+        {% if not loop.last %}<div class="separator"></div>{% endif %}
     </div>
 {% endfor %}
+

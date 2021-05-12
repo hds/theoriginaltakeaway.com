@@ -1,6 +1,0 @@
-#Cactus==3.3.3
--e git+git@github.com:hds/Cactus.git#egg=cactus
-Markdown==2.6.5
-Pygments==2.1.3
-django-markwhat==1.5
-py-gfm==0.1.1
